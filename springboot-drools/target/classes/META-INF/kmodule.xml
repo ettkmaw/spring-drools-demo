@@ -1,0 +1,10 @@
+<kmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://www.drools.org/xsd/kmodule">
+    <kbase name="kieBase01" default="false" eventProcessingMode="cloud" equalsBehavior="identity" mutability="allowed" declarativeAgenda="disabled" sequential="false" sessionsPool="-1" betaRangeIndex="disabled" scope="javax.enterprise.context.ApplicationScoped" packages="rules">
+        <ksession name="HelloWorldKS" type="stateful" default="false" directFiring="false" threadSafe="true" accumulateNullPropagation="false" clockType="realtime" beliefSystem="simple">
+            <listeners>
+                <agendaEventListener type="org.kie.api.event.rule.DebugAgendaEventListener"/>
+            </listeners>
+        </ksession>
+    </kbase>
+</kmodule>

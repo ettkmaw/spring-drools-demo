@@ -1,0 +1,14 @@
+server:
+  port: 9909
+spring:
+  application:
+    name: spring-drools-demo
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/drools_demo?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

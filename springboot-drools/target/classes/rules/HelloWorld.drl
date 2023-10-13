@@ -1,0 +1,10 @@
+import com.lycros.drools.domain.Message
+rule "Hello World"
+  when
+  $message:Message(status==Message.HELLO,message:message)
+  then
+    System.out.println( message );
+    $message.setMessage("Goodbye cruel world");
+    $message.setStatus(Message.GOODBYE);
+    update($message);
+end

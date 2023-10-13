@@ -1,0 +1,7 @@
+import com.lycros.drools.domain.Message
+rule "Good Bye"
+  when
+   $message:Message(status==Message.HELLO,message:message)
+  then
+    System.out.println( message );
+end
